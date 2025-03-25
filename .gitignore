@@ -1,0 +1,15 @@
+# Ignorar dependências de pacotes Node
+node_modules/
+
+# Ignorar build do Next.js
+.next/
+
+# Ignorar arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar logs
+*.log
+
+# Ignorar a página explicativa
+Planeja-fit-Front-End.txt

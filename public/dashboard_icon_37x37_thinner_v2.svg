@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="26.64pt" height="26.64pt" viewBox="0 0 26.64 26.64" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2025-03-21T15:43:39.871358</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.6.3, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 26.64 
+L 26.64 26.64 
+L 26.64 0 
+L 0 0 
+L 0 26.64 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 23.976 13.4532 
+L 18.8145 4.570897 
+L 8.4915 4.570897 
+L 3.33 13.4532 
+L 8.4915 22.335503 
+L 18.8145 22.335503 
+L 23.976 13.4532 
+z
+" clip-path="url(#p956bb8a6f9)" style="fill: #ffffff; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 13.653 16.53012 
+C 14.474307 16.53012 15.262087 16.205916 15.842839 15.628911 
+C 16.423591 15.051906 16.7499 14.269209 16.7499 13.4532 
+C 16.7499 12.637191 16.423591 11.854494 15.842839 11.277489 
+C 15.262087 10.700484 14.474307 10.37628 13.653 10.37628 
+C 12.831693 10.37628 12.043913 10.700484 11.463161 11.277489 
+C 10.882409 11.854494 10.5561 12.637191 10.5561 13.4532 
+C 10.5561 14.269209 10.882409 15.051906 11.463161 15.628911 
+C 12.043913 16.205916 12.831693 16.53012 13.653 16.53012 
+L 13.653 16.53012 
+z
+" clip-path="url(#p956bb8a6f9)" style="fill: none; stroke: #000000; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p956bb8a6f9">
+   <rect x="3.33" y="3.1968" width="20.646" height="20.5128"/>
+  </clipPath>
+ </defs>
+</svg>
