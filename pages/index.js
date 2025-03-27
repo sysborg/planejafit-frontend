@@ -8,13 +8,19 @@ import Pagination from '../components/Pagination'
 export default function HomePage() {
   return (
     <div className='relative min-h-screen bg-[#F5F6F8]'>
-      <DashboardSidebar />
-      <SearchIndicator />
-      <TopBar />
-      <SearchMini />
-      <DashboardContent />
-      <SortBy />
-      <Pagination />
+      <div className='flex gap-8'>
+        <DashboardSidebar />
+        <>
+          <div className='flex flex-col w-full gap-8'>
+            <SearchIndicator />
+            <TopBar />
+            <SearchMini />
+            <DashboardContent />
+            <SortBy />
+            <Pagination />
+          </div>
+        </>
+      </div>
     </div>
   )
 }
