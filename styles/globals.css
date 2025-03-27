@@ -1,7 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   background-color: #f5f6fa;
+}
+
+@layer utilities {
+  table td,
+  table th {
+    @apply px-2 py-4;
+  }
+
+  table thead th {
+    @apply text-left text-gray-500 border-b;
+  }
+
+  table tbody {
+    @apply text-tbody font-medium;
+  }
+
+  table tbody tr {
+    @apply border-t border-[#EEE];
+  }
+}
+
+@layer components {
+  .badge {
+    @apply text-xs font-semibold px-3 py-1 rounded-full;
+  }
+
+  .badge-active {
+    @apply bg-green-100 text-green-700;
+  }
+
+  .badge-inactive {
+    @apply bg-red-100 text-red-700;
+  }
+
+  aside .menu-label {
+    @apply text-[14px] font-[400];
+    font-family: 'Poppins', sans-serif;
+  }
+
+  aside .menu-item {
+    @apply text-menu flex items-center gap-3 rounded-lg px-4 py-4 transition-all duration-300 hover:bg-highlight hover:text-white;
+  }
 }
