@@ -39,12 +39,21 @@ body {
     @apply bg-red-100 text-red-700;
   }
 
-  aside .menu-label {
+  aside .menu-item {
+    @apply text-menu flex items-center gap-3 rounded-lg px-4 py-4 transition-all duration-300 hover:bg-highlight hover:text-white;
+  }
+
+  aside .menu-item span {
     @apply text-[14px] font-[400];
     font-family: 'Poppins', sans-serif;
   }
 
-  aside .menu-item {
-    @apply text-menu flex items-center gap-3 rounded-lg px-4 py-4 transition-all duration-300 hover:bg-highlight hover:text-white;
+  aside .menu-item span {
+    @apply text-[14px] font-[400];
+    font-family: 'Poppins', sans-serif;
   }
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
 }

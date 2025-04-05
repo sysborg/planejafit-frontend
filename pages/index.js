@@ -1,21 +1,19 @@
-import SearchIndicator from '../components/SearchIndicator'
+import { withIronSessionSsr } from "iron-session/next";
+import { sessionOptions } from "@/lib/session";
 import TopBar from '../components/TopBar'
-import SearchMini from '../components/SearchMini'
-import SortBy from '../components/SortBy'
-import Pagination from '../components/Pagination'
 import Card from '../components/Card'
 import PageTitle from '../components/PageTitle'
 import PageSubtitle from '../components/PageSubtitle'
 import Grid from '../components/Grid'
+import React from 'react'
 
 export default function HomePage() {
   const gridHead = [
-    'Customer Name',
-    'Company',
-    'Phone Number',
+    'Nome',
+    'Plano',
+    'Telefone',
     'Email',
-    'Country',
-    'Status',
+    'Ativo?',
   ];
 
   const members = [
@@ -24,7 +22,6 @@ export default function HomePage() {
       "company": "Microsoft",
       "phone": "(225) 555-0118",
       "email": "jane@microsoft.com",
-      "country": "United States",
       "status": true
     },
     {
@@ -32,7 +29,6 @@ export default function HomePage() {
       "company": "Yahoo",
       "phone": "(205) 555-0100",
       "email": "floyd@yahoo.com",
-      "country": "Kiribati",
       "status": false
     },
     {
@@ -40,7 +36,6 @@ export default function HomePage() {
       "company": "Adobe",
       "phone": "(302) 555-0107",
       "email": "ronald@adobe.com",
-      "country": "Israel",
       "status": true
     },
     {
@@ -48,7 +43,6 @@ export default function HomePage() {
       "company": "Tesla",
       "phone": "(252) 555-0126",
       "email": "marvin@tesla.com",
-      "country": "Iran",
       "status": true
     },
     {
@@ -56,7 +50,6 @@ export default function HomePage() {
       "company": "Google",
       "phone": "(629) 555-0129",
       "email": "jerome@google.com",
-      "country": "Réunion",
       "status": true
     },
     {
@@ -64,7 +57,6 @@ export default function HomePage() {
       "company": "Amazon",
       "phone": "(505) 555-0125",
       "email": "jenny@amazon.com",
-      "country": "Costa Rica",
       "status": true
     },
     {
@@ -72,7 +64,6 @@ export default function HomePage() {
       "company": "Microsoft",
       "phone": "(406) 555-0120",
       "email": "kathryn@microsoft.com",
-      "country": "Curaçao",
       "status": false
     },
     {
@@ -80,7 +71,6 @@ export default function HomePage() {
       "company": "Yahoo",
       "phone": "(208) 555-0112",
       "email": "jacob@yahoo.com",
-      "country": "Brazil",
       "status": true
     }
   ];
@@ -100,16 +90,12 @@ export default function HomePage() {
 
   return (
     <>
-        {/*<SearchIndicator />
-        <SearchMini />*/}
-        <TopBar />
-        <Card>
-          <PageTitle title='Dashboard' />
-          <PageSubtitle subtitle='Active Members' />
-          <Grid head={gridHead} body={members} badgeColumn={badgeColumn} />
-        {/*<SortBy />
-        <Pagination />*/}
-        </Card>
+      <TopBar />
+      <Card>
+        <PageTitle title='Dashboard' />
+        <PageSubtitle subtitle='Clientes ativos' />
+        <Grid head={gridHead} body={members} badgeColumn={badgeColumn} />
+      </Card>
     </>
   )
 }
